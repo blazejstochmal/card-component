@@ -85,7 +85,6 @@ body {
         }
     
     }
-
     @media screen and (max-width: 980px){
         :root {
             font-size: 12px;
@@ -101,42 +100,7 @@ body {
             }
         }
     
-    }
-    @media screen and (max-width: 850px) {
-        .baner {
-            display: flex;
-            flex-direction: column-reverse;
-            width: 350px;
-            margin: 5rem;
-            .text-side {
-                text-align: center;
-                .stats {
-                    & ul {
-                        flex-direction: column;
-                        padding-bottom: 2rem;
-                        & li {
-                            padding-top: 1.5rem;
-                        }
-                    }
-                }
-                .desc {
-                    
-@media screen and (max-width: 980px){
-        :root {
-            font-size: 12px;
-        }
-        .baner {
-            .text-side {
-                padding: 4rem 3rem 4rem 4rem;
-    
-            }
-            .photo-side {
-                background-image: url("./images/image-header-mobile.jpg");
-                width: 400xp;
-            }
-        }
-    
-    }
+    }               
     @media screen and (max-width: 850px) {
         .baner {
             display: flex;
@@ -156,16 +120,6 @@ body {
                 }
                 .desc {
                     padding-bottom: 1rem;
-                }
-            }
-            .photo-side {
-                width: 350px !important;
-                min-width: 200px;
-                min-height: 280px;
-                border-radius: 0.5rem 0.5rem 0 0;
-            }
-        }
-    }
                 }
             }
             .photo-side {
