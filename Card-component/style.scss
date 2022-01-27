@@ -1,0 +1,178 @@
+
+$main-bg: hsl(233, 47%, 7%);
+$card-bg: hsl(244, 38%, 16%);
+$overlay: hsl(277, 64%, 61%);
+$font-color: (
+    "main-heading": hsl(0, 0%, 100%),
+    "main-paragraph": hsla(0, 0%, 100%, 0.75),
+    "stats-heading": hsla(0, 0%, 100%, 0.6),
+);
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $main-bg;
+    min-height: 100vh;
+    font-size: 15px;
+    font-family: 'Inter', 'sans-serif';
+    overflow: hidden;
+}
+    .baner {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        max-width: 1020px;
+        background-color: $card-bg;
+        border-radius: 0.5rem;
+        margin: 1rem;
+        text-align: left;
+        .text-side {
+            padding: 4rem 5rem 4rem 4rem;
+            max-width: 500px;
+            .title {
+                font-family: 'Lexend Deca', 'sans-serif';
+                color: map-get($font-color, main-heading);
+                font-weight: 700;
+                font-size: 2rem;
+                padding-bottom: 1.5rem;
+                
+                .title-span {
+                    color: $overlay;
+                    margin-right: 10px;
+                }
+            }
+            .desc {
+                color: map-get($font-color, main-paragraph);
+                padding-bottom: 4rem;
+            }
+            .stats {
+                & ul {
+                    display: flex;
+                    justify-content: space-between;
+                    list-style-type: none;
+                    & li {
+                        letter-spacing: 1px;
+                    }
+                }
+                &__title{
+                    font-size: 1.3rem;
+                    color: map-get($font-color, main-heading);
+                    padding-bottom: 0.5rem;
+                }
+                &__paragraph {
+                    color: map-get($font-color, stats-heading);
+                    text-transform: uppercase;
+                    font-size: 0.75rem;
+                }
+        }
+    }
+        .photo-side {
+            background-image: url("./images/image-header-desktop.jpg");
+            background-color: $overlay;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-blend-mode: multiply;
+            min-height: 10vh;
+            width: 540px;
+            min-width: 400px;
+            border-radius: 0 0.5rem 0.5rem 0;
+            background-position: center;
+        }
+    
+    }
+
+    @media screen and (max-width: 980px){
+        :root {
+            font-size: 12px;
+        }
+        .baner {
+            .text-side {
+                padding: 4rem 3rem 4rem 4rem;
+    
+            }
+            .photo-side {
+                background-image: url("./images/image-header-mobile.jpg");
+                width: 400xp;
+            }
+        }
+    
+    }
+    @media screen and (max-width: 850px) {
+        .baner {
+            display: flex;
+            flex-direction: column-reverse;
+            width: 350px;
+            margin: 5rem;
+            .text-side {
+                text-align: center;
+                .stats {
+                    & ul {
+                        flex-direction: column;
+                        padding-bottom: 2rem;
+                        & li {
+                            padding-top: 1.5rem;
+                        }
+                    }
+                }
+                .desc {
+                    
+@media screen and (max-width: 980px){
+        :root {
+            font-size: 12px;
+        }
+        .baner {
+            .text-side {
+                padding: 4rem 3rem 4rem 4rem;
+    
+            }
+            .photo-side {
+                background-image: url("./images/image-header-mobile.jpg");
+                width: 400xp;
+            }
+        }
+    
+    }
+    @media screen and (max-width: 850px) {
+        .baner {
+            display: flex;
+            flex-direction: column-reverse;
+            width: 350px;
+            margin: 5rem;
+            .text-side {
+                text-align: center;
+                .stats {
+                    & ul {
+                        flex-direction: column;
+                        padding-bottom: 2rem;
+                        & li {
+                            padding-top: 1.5rem;
+                        }
+                    }
+                }
+                .desc {
+                    padding-bottom: 1rem;
+                }
+            }
+            .photo-side {
+                width: 350px !important;
+                min-width: 200px;
+                min-height: 280px;
+                border-radius: 0.5rem 0.5rem 0 0;
+            }
+        }
+    }
+                }
+            }
+            .photo-side {
+                width: 350px;
+                min-width: 200px;
+                min-height: 280px;
+                border-radius: 0.5rem 0.5rem 0 0;
+            }
+        }
+    }
